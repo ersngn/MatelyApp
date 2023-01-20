@@ -7,17 +7,7 @@
     <projectFile profileName="Mately.Services.Match.API">src/Application/Services/Match/Mately.Services.Match.API/Mately.Services.Match.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cbaf405-565d-4e22-b22f-2ca0a6a2e71a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Application/Common/Mately.Common/Domain/Dtos/Base/ErrorDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Common/Mately.Common/Domain/Dtos/Base/IRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Common/Mately.Common/Domain/Dtos/Base/IResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Common/Mately.Common/Domain/Dtos/Response/Response.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Common/Mately.Common/Enumeration/ErrorEnum.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mately/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mately/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Common/Mately.Common/Constants/ResponseMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Mately.Common/Constants/ResponseMessage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Common/Mately.Common/Domain/Models/Base/Mongo/MongoEntityWithAuditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Mately.Common/Domain/Models/Base/Mongo/MongoEntityWithAuditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Common/Mately.Common/Mately.Common.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Mately.Common/Mately.Common.csproj" afterDir="false" />
-    </list>
+    <list default="true" id="5cbaf405-565d-4e22-b22f-2ca0a6a2e71a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674238293107</updated>
-      <workItem from="1674238299142" duration="1960000" />
+      <workItem from="1674238299142" duration="2259000" />
     </task>
     <servers />
   </component>
