@@ -1,7 +1,8 @@
-using Mately.Indentity.API.Repository.Base;
+using Mately.Identity.API.Domain.User.Model;
+using Mately.Identity.API.Repository.Base;
 
-namespace Mately.Indentity.API.Repository.User;
+namespace Mately.Identity.API.Repository.User;
 
-public interface IUserRepository : IRepository<Domain.User.User>
+public interface IUserRepository : IRepository<ApplicationUser>
 {
 }

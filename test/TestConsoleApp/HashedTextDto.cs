@@ -1,8 +1,6 @@
-using Mately.Common.Domain.Dtos.Base;
+namespace TestConsoleApp;
 
-namespace OneToOne.Domain.Dtos.Security;
-
-public class HashedTextDto : IDto
+public class HashedTextDto 
 {
     public string HashedText { get; set; }
 }

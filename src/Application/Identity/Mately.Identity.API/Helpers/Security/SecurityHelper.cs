@@ -3,7 +3,7 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using Mately.Common.Constants;
-using Mately.Indentity.API.Domain.AccountSecurity.Dtos;
+using Mately.Identity.API.Domain.User.Dtos;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.IdentityModel.Tokens;
@@ -63,7 +63,7 @@ public class SecurityHelper : ISecurityHelper
     {
         return new ValidateHashDto
         {
-            isValidated = CreateHash(value, salt).HashedText?.Split('æ')[0] == hash
+            isValidated = CreateHash(value, salt).HashedText?.Split('æ')[0] == hash.Split("æ")[0]
         };
     }
 }

@@ -8,6 +8,7 @@ using TransactionMessage = Mately.Common.Constants.TransactionMessageConstant;
 
 namespace Mately.Common.Domain.Dtos.Response;
 
+/*
 public class Response : IResponse
 {
     [JsonIgnore]
@@ -93,5 +94,5 @@ public class Response : IResponse
             IsSuccess = false
         };
     }
-}
+}*/
 

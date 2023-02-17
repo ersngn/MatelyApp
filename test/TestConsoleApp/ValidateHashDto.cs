@@ -1,8 +1,6 @@
-using Mately.Common.Domain.Dtos.Base;
+namespace TestConsoleApp;
 
-namespace Mately.Indentity.API.Domain.Security.Dtos;
-
-public class ValidateHashDto : IDto
+public class ValidateHashDto
 {
     public bool isValidated { get; set; }
 }

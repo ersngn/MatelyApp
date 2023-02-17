@@ -44,8 +44,10 @@ namespace Mately.Indentity.API.Infrastructure.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Password")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("SubscriptionType")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("UpdatedDate")
                         .HasColumnType("datetime2");
@@ -75,6 +77,10 @@ namespace Mately.Indentity.API.Infrastructure.Migrations
                     b.Property<DateTime>("DeletedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("DeviceKey")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
@@ -92,6 +98,41 @@ namespace Mately.Indentity.API.Infrastructure.Migrations
                     b.HasIndex("AccountId");
 
                     b.ToTable("Devices");
+                });
+
+            modelBuilder.Entity("Mately.Indentity.API.Domain.Security.AccountSecurity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("AccountId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("AccountKey")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DeletedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AccountId");
+
+                    b.ToTable("AccountSecurities");
                 });
 
             modelBuilder.Entity("Mately.Indentity.API.Domain.User.User", b =>
@@ -155,6 +196,17 @@ namespace Mately.Indentity.API.Infrastructure.Migrations
                 {
                     b.HasOne("Mately.Indentity.API.Domain.Account.Account", "Account")
                         .WithMany("Devices")
+                        .HasForeignKey("AccountId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Account");
+                });
+
+            modelBuilder.Entity("Mately.Indentity.API.Domain.Security.AccountSecurity", b =>
+                {
+                    b.HasOne("Mately.Indentity.API.Domain.Account.Account", "Account")
+                        .WithMany()
                         .HasForeignKey("AccountId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

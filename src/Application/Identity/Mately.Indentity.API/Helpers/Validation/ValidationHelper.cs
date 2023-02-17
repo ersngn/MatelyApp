@@ -7,7 +7,7 @@ using Microsoft.OpenApi.Extensions;
 
 namespace Mately.Indentity.API.Helpers.Validation;
 
-public static class AccountValidationHelper
+public static class ValidationHelper
 {
     public static bool IsEmailValid(string email)
     {

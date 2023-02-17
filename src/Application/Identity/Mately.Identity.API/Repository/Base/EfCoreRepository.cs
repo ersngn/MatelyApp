@@ -1,9 +1,9 @@
 using System.Linq.Expressions;
 using Mately.Common.Domain.Models.Base;
-using Mately.Indentity.API.Infrastructure;
+using Mately.Identity.API.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 
-namespace Mately.Indentity.API.Repository.Base;
+namespace Mately.Identity.API.Repository.Base;
 
 public class EfCoreRepository<TEntity> : IRepository<TEntity> where TEntity : class, IEntity, new()
 {

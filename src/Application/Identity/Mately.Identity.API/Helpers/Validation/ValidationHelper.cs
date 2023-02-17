@@ -5,7 +5,7 @@ using Mately.Common.Domain.Dtos.Transaction;
 using Mately.Common.Enumeration;
 using Microsoft.OpenApi.Extensions;
 
-namespace Mately.Indentity.API.Helpers.Validation;
+namespace Mately.Identity.API.Helpers.Validation;
 
 public static class ValidationHelper
 {

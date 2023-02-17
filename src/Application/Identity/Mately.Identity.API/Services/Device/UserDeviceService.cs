@@ -3,9 +3,8 @@ using Mately.Common.Domain.Dtos.Transaction;
 using Mately.Identity.API.Domain.Device.Dtos;
 using Mately.Identity.API.Domain.Device.Model;
 using Mately.Identity.API.Repository.Device;
-using Mately.Identity.API.Repository.User;
 
-namespace Mately.Identity.API.Services.User;
+namespace Mately.Identity.API.Services.Device;
 
 public class UserDeviceService : IUserDeviceService
 {
@@ -18,8 +17,22 @@ public class UserDeviceService : IUserDeviceService
         _mapper = mapper;
     }
 
-    public Task<ApiTransactionResult<CreateDeviceResultDto>> CreateAsync(ApplicationUserDevice securityKey)
+    public async Task<ApiTransactionResult<CreateDeviceResultDto>> CreateAsync(ApplicationUserDevice device)
     {
-        throw new NotImplementedException();
+        var response = new ApiTransactionResult<CreateDeviceResultDto>();
+
+        try
+        {
+            var result = await _repository.AddAsync(device);
+            var responseData = _mapper.Map<CreateDeviceResultDto>(result);
+            response.Success(responseData);
+        }
+        catch (Exception e)
+        {
+            response.UnKnownError(e.Message);
+            return response;
+        }
+
+        return response;
     }
 }

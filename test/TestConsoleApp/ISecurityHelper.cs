@@ -1,7 +1,4 @@
-using Mately.Indentity.API.Domain.Security.Dtos;
-using OneToOne.Domain.Dtos.Security;
-
-namespace Mately.Indentity.API.Helpers.Security;
+namespace TestConsoleApp;
 
 public interface ISecurityHelper
 {

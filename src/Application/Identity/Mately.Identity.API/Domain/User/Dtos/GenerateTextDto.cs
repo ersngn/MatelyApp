@@ -1,4 +1,4 @@
-namespace Mately.Indentity.API.Domain.AccountSecurity.Dtos;
+namespace Mately.Identity.API.Domain.User.Dtos;
 
 public class GenerateTextDto
 {

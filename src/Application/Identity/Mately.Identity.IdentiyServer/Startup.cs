@@ -23,6 +23,13 @@ namespace Mately.Identity.IdentiyServer
             // uncomment, if you want to add an MVC-based UI
             //services.AddControllersWithViews();
 
+            services.AddIdentityServer()
+                .AddInMemoryClients(new List<Client>())
+                .AddInMemoryIdentityResources(new List<IdentityResource>())
+                .AddInMemoryApiResources(new List<ApiResource>())
+                .AddInMemoryApiScopes(new List<ApiScope>())
+                .AddTestUsers(new List<TestUser>())
+                .AddDeveloperSigningCredential();
             var builder = services.AddIdentityServer(options =>
                 {
                     // see https://identityserver4.readthedocs.io/en/latest/topics/resources.html

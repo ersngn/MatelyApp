@@ -1,8 +1,11 @@
 using Mately.Common.Domain.Dtos.Base;
+using Mately.Common.Enumeration;
 
-namespace Mately.Indentity.API.Domain.AccountSecurity.Dtos;
+namespace Mately.Indentity.API.Domain.Account.Dtos;
 
 public class UpdateAccountResultDto : IDto
 {
-    
+    public Guid Id { get; set; }
+    public Guid UserId { get; set; }
+    public SubscriptionType SubscriptionType { get; set; }
 }

@@ -1,6 +1,6 @@
 using Mately.Common.Domain.Dtos.Base;
 
-namespace Mately.Identity.API.Domain.User.Dtos;
+namespace Mately.Identity.API.Domain.Auth.Dtos;
 
 public class RefreshTokenResultDto : IDto
 {

@@ -1,6 +1,6 @@
 using Mately.Common.Domain.Dtos.Base;
 
-namespace Mately.Indentity.API.Domain.User.Dtos;
+namespace Mately.Indentity.API.Domain.Auth.Dtos;
 
 public class RegisterResultDto : IDto
 {

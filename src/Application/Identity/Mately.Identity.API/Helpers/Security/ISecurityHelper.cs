@@ -1,4 +1,4 @@
-using Mately.Indentity.API.Domain.AccountSecurity.Dtos;
+using Mately.Identity.API.Domain.User.Dtos;
 
 namespace Mately.Indentity.API.Helpers.Security;
 

@@ -1,12 +1,10 @@
 using System.Security.Cryptography;
 using System.Text;
 using Mately.Common.Constants;
-using Mately.Indentity.API.Domain.Security.Dtos;
-using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.AspNetCore.DataProtection;
-using OneToOne.Domain.Dtos.Security;
+using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 
-namespace Mately.Indentity.API.Helpers.Security;
+namespace TestConsoleApp;
 
 public class SecurityHelper : ISecurityHelper
 {

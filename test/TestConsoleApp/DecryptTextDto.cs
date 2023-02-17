@@ -1,8 +1,6 @@
-using Mately.Common.Domain.Dtos.Base;
+namespace TestConsoleApp;
 
-namespace Mately.Indentity.API.Domain.Security.Dtos;
-
-public class DecryptTextDto : IDto
+public class DecryptTextDto
 {
     public string? DecryptedText { get; set; }
 }

@@ -1,7 +1,7 @@
 using System.Linq.Expressions;
 using Mately.Common.Domain.Models.Base;
 
-namespace Mately.Indentity.API.Repository.Base;
+namespace Mately.Identity.API.Repository.Base;
 
 public interface IRepository<T> where T : class, IEntity, new()
 {
