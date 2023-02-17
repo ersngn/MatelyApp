@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Mately.Common.Domain.Models.Base.MSSQL;
 
 public class SqlEntityWithAuditor : SqlEntityWithDate
