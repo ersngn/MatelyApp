@@ -15,69 +15,19 @@
     <projectFile>test/TestConsoleApp/TestConsoleApp.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cbaf405-565d-4e22-b22f-2ca0a6a2e71a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Identity.IdentiyServer/Config.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Identity.IdentiyServer/Mately.Identity.IdentiyServer.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Identity.IdentiyServer/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Identity.IdentiyServer/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Identity.IdentiyServer/Startup.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Controllers/AuthController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Domain/Account/Account.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Domain/Account/Dtos/CreateAccountResultDto.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Domain/Account/Dtos/GetAccountByFilterDto.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Domain/Account/Dtos/GetAccountByUserNameDto.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Domain/Account/Dtos/UpdateAccountResultDto.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Domain/AccountSecurity/AccountSecurity.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Domain/AccountSecurity/Dtos/CreateAccountSecurityResultDto.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Domain/AccountSecurity/Dtos/CreateTokenDto.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Domain/AccountSecurity/Dtos/CreateTokenResultDto.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Domain/AccountSecurity/Dtos/GetAccountSecurityByAccountIdDto.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Domain/Auth/Dtos/CreateTokenResultDto.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Domain/Auth/Dtos/LoginDto.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Domain/Auth/Dtos/LoginResultDto.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Domain/Auth/Dtos/RegisterDto.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Domain/Auth/Dtos/RegisterResultDto.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Domain/Device/Device.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Domain/User/Dtos/GetUserForLoginDto.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Domain/User/User.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Helpers/AutoMapper/AutoMapperProfile.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Helpers/Generate/GenerateKey.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Helpers/Security/ISecurityHelper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Helpers/Security/SecurityHelper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Helpers/ServiceRegistration/ServiceRegistration.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Helpers/Validation/ValidationHelper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Infrastructure/ApplicationDbContext.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Infrastructure/Migrations/20230129145157_Initial.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Infrastructure/Migrations/20230129145157_Initial.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Infrastructure/Migrations/20230129230345_AccountUpdate.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Infrastructure/Migrations/20230129230345_AccountUpdate.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Infrastructure/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Mately.Indentity.API.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Repository/Account/AccountRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Repository/Account/IAccountRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Repository/AccountSecuriy/AccountSecurityRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Repository/AccountSecuriy/IAccountSecurityRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Repository/Base/EfCoreRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Repository/Base/IRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Repository/Device/DeviceRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Repository/Device/IDeviceRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Repository/User/IUserRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Repository/User/UserRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Services/Account/AccountService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Services/Account/IAccountService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Services/AccountSecurity/AccountSecurityService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Services/AccountSecurity/IAccountSecurityService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Services/Auth/AuthService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Services/Auth/IAuthService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Services/Auth/Validation/AuthValidation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Services/Device/DeviceService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Services/Device/IDeviceService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Services/User/IUserService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/Services/User/UserService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Identity/Mately.Indentity.API/appsettings.json" beforeDir="false" />
+    <list default="true" id="5cbaf405-565d-4e22-b22f-2ca0a6a2e71a" name="Changes" comment="Delete all old version of Identiy">
+      <change afterPath="$PROJECT_DIR$/src/Application/Common/Mately.Core/Configs/IConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Common/Mately.Core/Configs/MongoConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Services/Match/Mately.Services.Match.Infrastructure/MongoDbContext/MongoDbContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Services/Match/Mately.Services.Match.Repository/MongoBase/IRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Services/Match/Mately.Services.Match.Repository/MongoBase/MongoRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Services/Match/Mately.Services.Match.API/Mately.Services.Match.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Services/Match/Mately.Services.Match.API/Mately.Services.Match.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Services/Match/Mately.Services.Match.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Services/Match/Mately.Services.Match.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Services/Match/Mately.Services.Match.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Services/Match/Mately.Services.Match.API/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Services/Match/Mately.Services.Match.Infrastructure/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Services/Match/Mately.Services.Match.Infrastructure/Mately.Services.Match.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Services/Match/Mately.Services.Match.Infrastructure/Mately.Services.Match.Infrastructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Services/Match/Mately.Services.Match.Repository/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Services/Match/Mately.Services.Match.Repository/Mately.Services.Match.Repository.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Services/Match/Mately.Services.Match.Repository/Mately.Services.Match.Repository.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -334,8 +284,16 @@
       <workItem from="1674238299142" duration="92503000" />
       <workItem from="1675335306305" duration="30591000" />
       <workItem from="1676126932100" duration="32161000" />
-      <workItem from="1676654643040" duration="2453000" />
+      <workItem from="1676654643040" duration="5717000" />
     </task>
+    <task id="LOCAL-00001" summary="Delete all old version of Identiy">
+      <created>1676657135269</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676657135269</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,6 +315,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Delete all old version of Identiy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete all old version of Identiy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

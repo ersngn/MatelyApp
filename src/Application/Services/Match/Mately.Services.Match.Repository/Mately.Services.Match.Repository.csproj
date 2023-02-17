@@ -7,4 +7,14 @@
         <RootNamespace>Mately.Service.Match.Repository</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Common\Mately.Common\Mately.Common.csproj" />
+      <ProjectReference Include="..\Mately.Services.Match.Infrastructure\Mately.Services.Match.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MongoDB.Bson" Version="2.19.0" />
+      <PackageReference Include="MongoDB.Driver" Version="2.19.0" />
+    </ItemGroup>
+
 </Project>
