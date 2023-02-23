@@ -17,6 +17,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\..\Common\Mately.Common\Mately.Common.csproj" />
       <ProjectReference Include="..\..\..\Common\Mately.Core\Mately.Core.csproj" />
     </ItemGroup>
 

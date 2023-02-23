@@ -12,6 +12,8 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\..\Common\Mately.Core\Mately.Core.csproj" />
+      <ProjectReference Include="..\Mately.Services.Match.Business\Mately.Services.Match.Business.csproj" />
+      <ProjectReference Include="..\Mately.Services.Match.Domain\Mately.Services.Match.Domain.csproj" />
     </ItemGroup>
 
 </Project>

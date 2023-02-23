@@ -8,6 +8,15 @@ namespace Mately.Common.Domain.Dtos.Transaction;
 
 public class ApiTransactionResult<T> : IResponse where T : class
 {
+    public ApiTransactionResult()
+    {
+        
+    }
+
+    public ApiTransactionResult(T data)
+    {
+        Data = data;
+    }
     public bool IsSuccess { get; set; }
     public HttpStatusCode StatusCode { get; set; }
     public List<TransactionMessage> Messages { get; set; }
@@ -29,6 +38,21 @@ public class ApiTransactionResult<T> : IResponse where T : class
             }
         };
         Data = data;
+    }
+    
+    public void Success()
+    {
+        IsSuccess = true;
+        StatusCode = HttpStatusCode.OK;
+        Messages = new List<TransactionMessage>()
+        {
+            new()
+            {
+                Message = TransactionResultEnum.TransactionSuccess,
+                Code = (int)TransactionResultEnum.TransactionSuccess,
+                Description = TransactionResultEnum.TransactionSuccess.GetDisplayName()
+            }
+        };
     }
     
     public void Success(T data, HttpStatusCode statusCode)

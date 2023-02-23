@@ -7,10 +7,10 @@ namespace Mately.Services.Match.Infrastructure.MongoDbContext;
 public class MongoDbContext
 {
     private readonly IMongoDatabase _database;
-    public MongoDbContext(IOptions<MongoConfig> settings)
+    public MongoDbContext(IMongoConfig config)
     {
-        var client = new MongoClient(settings.Value.ConnectionString);
-        _database = client.GetDatabase(settings.Value.DataBase);
+        var client = new MongoClient(config.ConnectionString);
+        _database = client.GetDatabase(config.DatabaseName);
     }
 
     public IMongoCollection<T> GetCollection<T>()

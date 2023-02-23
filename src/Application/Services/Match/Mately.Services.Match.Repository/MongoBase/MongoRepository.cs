@@ -1,6 +1,8 @@
 using System.Linq.Expressions;
 using Mately.Common.Domain.Models.Base.Mongo;
+using Mately.Core.Configs;
 using Mately.Services.Match.Infrastructure.MongoDbContext;
+using Microsoft.Extensions.Options;
 using MongoDB.Bson;
 using MongoDB.Driver;
 
@@ -9,7 +11,12 @@ namespace Mately.Service.Match.Repository.MongoBase;
 public class MongoRepository<T> : IRepository<T> where T : MongoEntity, new()
 {
     private readonly IMongoCollection<T> _collection;
-    private readonly MongoDbContext _dbContext;
+
+    public MongoRepository(IMongoConfig mongoConfig)
+    {
+        var dbContext = new MongoDbContext(mongoConfig);
+        _collection = dbContext.GetCollection<T>();
+    }
     
     public async Task<T> AddAsync(T entity)
         {

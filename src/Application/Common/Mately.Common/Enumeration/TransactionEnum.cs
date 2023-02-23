@@ -9,88 +9,104 @@ public enum TransactionResultEnum
 {
     #region Common
     [Display(Name = TransactionMessageConstant.UnknownError)]
-    UnknownError = 10000,
+    UnknownError = 10001,
     [Display(Name = TransactionMessageConstant.TransactionSuccess)]
-    TransactionSuccess = 10001,
+    TransactionSuccess = 10002,
     #endregion
+
+    #region Identity
     
     #region NullCheck
     [Display(Name = TransactionMessageConstant.NullEmail)]
-    NullEmail = 11000,
+    NullEmail = 11100,
     [Display(Name = TransactionMessageConstant.NullPhone)]
-    NullPhone = 11002,
+    NullPhone = 11101,
     [Display(Name = TransactionMessageConstant.NullUserName)]
-    NullUserName = 11003,
+    NullUserName = 11102,
     [Display(Name = TransactionMessageConstant.NullEmail)]
-    NullFirstName = 11004,
+    NullFirstName = 11103,
     [Display(Name = TransactionMessageConstant.NullLastName)]
-    NullLastName = 11005,
+    NullLastName = 11104,
     [Display(Name = TransactionMessageConstant.NullPassword)]
-    NullPassword = 11006,
+    NullPassword = 11105,
     [Display(Name = TransactionMessageConstant.NullRole)]
-    NullRole = 11011,
+    NullRole = 11106,
     #endregion
 
     #region Validation
     [Display(Name = TransactionMessageConstant.EmailNotValid)]
-    NotValidEmail = 11007,
+    NotValidEmail = 11200,
     [Display(Name = TransactionMessageConstant.PhoneNotValid)]
-    NotValidPhone = 11008,
+    NotValidPhone = 11201,
     [Display(Name = TransactionMessageConstant.FirstNameNotValid)]
-    NotValidFirstName = 11009,
+    NotValidFirstName = 11202,
     [Display(Name = TransactionMessageConstant.NullPassword)]
-    NotValidLastName = 11010,
+    NotValidLastName = 11203,
     #endregion
-
-    #region User
     
+    #region User
     [Display(Name = TransactionMessageConstant.UserNotCreated)]
-    UserNotCreated = 1201,
+    UserNotCreated = 11300,
     [Display(Name = TransactionMessageConstant.UserNameAlreadyExist)]
-    UserNameAlreadyExist = 1202,
+    UserNameAlreadyExist = 11301,
     [Display(Name = TransactionMessageConstant.EmailAlreadyExist)]
-    EmailAlreadyExist = 1203,
+    EmailAlreadyExist = 11302,
     [Display(Name = TransactionMessageConstant.PhoneAlreadyExist)]
-    PhoneAlreadyExist = 1204,
+    PhoneAlreadyExist = 11303,
     [Display(Name = TransactionMessageConstant.UserNotFound)]
-    UserNotFound = 1208,
-
-
+    UserNotFound = 11304,
     #endregion
 
     #region Account
     [Display(Name = TransactionMessageConstant.AccountNotCreated)]
-    AccountNotCreated = 1205,
+    AccountNotCreated = 11400,
     [Display(Name = TransactionMessageConstant.AccountNotUpdated)]
-    AccountNotUpdated = 1206,
+    AccountNotUpdated = 11401,
+    #endregion
+    
+    #region AccountSecurity
+    [Display(Name = TransactionMessageConstant.AccountSecurityNotCreated)]
+    AccountSecurityNotCreated = 11400,
+    [Display(Name = TransactionMessageConstant.AccountSecurityNotFound)]
+    AccountSecurityNotFound = 11401,
+    #endregion
+    
+    #region Auth
+    [Display(Name = TransactionMessageConstant.PasswordNotMatch)]
+    PasswordNotMatch = 11500,
+    [Display(Name = TransactionMessageConstant.InvalidRequest)]
+    InvalidRequest = 11501,
+    [Display(Name = TransactionMessageConstant.InvalidTokenOrRefreshToken)]
+    InvalidTokenOrRefreshToken = 11502,
+    #endregion
+
+    #region Role
+    [Display(Name = TransactionMessageConstant.RolesNotFound)]
+    RolesNotFound = 11600,
+    #endregion
+    #endregion
+
+    #region Match
+
+    #region Profile
+    
+    [Display(Name = TransactionMessageConstant.ProfileNotCreated)]
+    ProfileNotCreated = 12000,
+    [Display(Name = TransactionMessageConstant.ProfileNotFount)]
+    ProfileNotFount = 12001,
+    [Display(Name = TransactionMessageConstant.ProfileNotUpdated)]
+    ProfileNotUpdated = 12002,
+    [Display(Name = TransactionMessageConstant.ProfilesNotFoundByDistance)]
+    ProfilesNotFoundByDistance = 12003,
+    
+    
+
+    #endregion
     
 
     #endregion
 
-    #region AccountSecurity
 
-    [Display(Name = TransactionMessageConstant.AccountSecurityNotCreated)]
-    AccountSecurityNotCreated = 1207,
-    [Display(Name = TransactionMessageConstant.AccountSecurityNotFound)]
-    AccountSecurityNotFound = 12022,
 
-    #endregion
 
-    #region Auth
-
-    [Display(Name = TransactionMessageConstant.PasswordNotMatch)]
-    PasswordNotMatch = 1225,
-    [Display(Name = TransactionMessageConstant.InvalidRequest)]
-    InvalidRequest = 1209,
-    [Display(Name = TransactionMessageConstant.InvalidTokenOrRefreshToken)]
-    InvalidTokenOrRefreshToken = 1210,
-
-    #endregion
-
-    #region Role
-
-    [Display(Name = TransactionMessageConstant.RolesNotFound)]
-    RolesNotFound = 1220,
-
-    #endregion
 }
